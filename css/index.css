@@ -1,0 +1,69 @@
+@import "cards.css" screen;
+
+body{
+ width: 70%;
+ padding-left: 14%;
+ 
+}
+
+.navlist{
+  display:flex;
+  justify-content: space-around ;
+  list-style:none;
+  border-radius: 15px;
+
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: Sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+.logo {
+  padding-right: 300px;
+  height: 54px;
+}
+
+.main {
+  margin-block-start: 86px;
+  /* margin-inline-start: 105px; */
+  margin-block-end: 93px;
+  border-radius: 15px;
+  background: #efeff5;
+  padding: 20px;
+  height: 150px;
+  font-family: Sans-serif;
+}
+
+
+.footer{
+  text-align: center;
+}
+
+
+.social {
+  padding-left: 0px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.social img{
+  height: 30px ;
+}
+
+@media screen and (min-width: 414px)and(max-width:770){
+  .logo{
+    padding-right:0px;
+  }
+
+  .cards {
+    grid-template-rows: 1fr 2em;
+}
+.navlist{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+}
